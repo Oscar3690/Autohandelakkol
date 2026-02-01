@@ -1,0 +1,350 @@
+﻿<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Autohandel Akkol | Universeel garagebedrijf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">
+            <img class="brand-logo" src="logo.jpg" alt="Autohandel Akkol logo" />
+          </span>
+          <div class="brand-text">
+            <span class="brand-name">Autohandel Akkol</span>
+            <span class="brand-tag">Universeel Garagebedrijf</span>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#services">Diensten</a>
+          <a href="#appointments">Afspraken</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu">
+          <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="menuPanel">
+            <span class="menu-bars">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <span class="sr-only">Menu openen</span>
+          </button>
+          <div class="menu-panel" id="menuPanel" role="menu">
+            <a role="menuitem" href="#services">Diensten</a>
+            <a role="menuitem" href="#appointments">Afspraken</a>
+            <a role="menuitem" href="#reviews">Reviews</a>
+            <a role="menuitem" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Onderhoud. Tuning. Detailing.</p>
+            <h1>Universeel garagebedrijf sinds 1999 gevestigd te Enschede.</h1>
+            <p class="lead">
+              Autohandel Akkol is een moderne werkplaats voor onderhoud, prestatie-upgrades en hoogwaardige detailing.
+              Wij houden uw auto scherp, snel en in topconditie.
+            </p>
+            <div class="hero-actions">
+              <a class="cta" href="#appointments">Afspraak maken</a>
+              <a class="ghost" href="#services">Bekijk diensten</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <span class="stat">15+</span>
+                <span class="stat-label">Jaren ervaring</span>
+              </div>
+              <div>
+                <span class="stat">48h</span>
+                <span class="stat-label">Gemiddelde doorlooptijd</span>
+              </div>
+              <div>
+                <span class="stat">4.9</span>
+                <span class="stat-label">Klantbeoordeling</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-slider">
+            <div class="slider">
+              <div class="slides">
+                <div class="slide is-active" data-title="BMW M Series">
+                  <img src="Bmw.png" alt="BMW coupe in studiolicht" />
+                </div>
+                <div class="slide" data-title="Porsche 911">
+                  <img src="Porsche.png" alt="Porsche sportauto profiel" />
+                </div>
+                <div class="slide" data-title="Duo Prestatie">
+                  <img src="2cars.png" alt="Twee prestatie-auto's geparkeerd" />
+                </div>
+                <div class="slide" data-title="BMW Blue Edition">
+                  <img src="bmw_blue.png" alt="Blauwe BMW sportauto" />
+                </div>
+              </div>
+              <div class="slider-controls">
+                <button class="slider-btn" id="prev" aria-label="Vorige foto">&#x2190;</button>
+                <div class="slider-meta">
+                  <span class="slider-count" id="sliderCount">01 / 04</span>
+                </div>
+                <button class="slider-btn" id="next" aria-label="Volgende foto">&#x2192;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-title">
+            <p>Wat we doen</p>
+            <h2>Werkplaatsdiensten, uitgevoerd met precisie.</h2>
+          </div>
+          <div class="service-grid">
+            <article>
+              <h3>Onderhoud</h3>
+              <p>Periodiek onderhoud, diagnose en reparaties zodat alles loopt zoals het hoort.</p>
+            </article>
+            <article>
+              <h3>Modificatie</h3>
+              <p>Prestatie-tuning, uitlaat, onderstel en maatwerkoplossingen voor echte resultaten.</p>
+            </article>
+            <article>
+              <h3>Detailing</h3>
+              <p>Diep reinigen, lakcorrectie en beschermingspakketten zodat uw auto er weer als nieuw uitziet.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointments" id="appointments">
+        <div class="container appointments-grid">
+          <div class="appointment-copy">
+            <p class="eyebrow">Afspraak maken</p>
+            <h2>Reserveer uw serviceafspraak.</h2>
+            <p>
+              Kies een tijd die u uitkomt. Wij bevestigen binnen 24 uur en bereiden ons voor op de gewenste
+              werkzaamheden.
+            </p>
+            <div class="appointment-card">
+              <h3>Wat gebeurt er daarna</h3>
+              <ul>
+                <li>Wij bevestigen beschikbaarheid en indicatieve timing.</li>
+                <li>Uw voertuig krijgt een snelle intake.</li>
+                <li>U vertrekt met een duidelijk plan en prijsindicatie.</li>
+              </ul>
+            </div>
+          </div>
+          <form class="appointment-form" id="bookingForm">
+            <div class="form-row">
+              <label>
+                Naam
+                <input type="text" name="name" placeholder="Uw naam" required />
+              </label>
+              <label>
+                Telefoon
+                <input type="tel" name="phone" placeholder="06 12345678" required />
+              </label>
+            </div>
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="u@email.com" required />
+            </label>
+            <div class="form-row">
+              <label>
+                Datum
+                <input type="date" name="date" required />
+              </label>
+              <label>
+                Tijd
+                <input type="time" name="time" required />
+              </label>
+            </div>
+            <label>
+              Soort service
+              <select name="service">
+                <option>Onderhoud / Reparatie</option>
+                <option>Modificatie / Prestatie</option>
+                <option>Detailing / Bescherming</option>
+                <option>Nog niet zeker</option>
+              </select>
+            </label>
+            <label>
+              Bericht
+              <textarea name="message" rows="4" placeholder="Vertel ons wat u zoekt"></textarea>
+            </label>
+            <button class="cta" type="submit">Afspraak aanvragen</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+            <section class="reviews" id="reviews">
+        <div class="container">
+          <div class="section-title">
+            <p>Reviews</p>
+            <h2>Wat klanten zeggen.</h2>
+          </div>
+          <div class="review-slider">
+            <div class="review-slides">
+              <article class="review-card review-slide is-active">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">Enes Likoglu</span>
+                    <span class="review-date">10-12-2025</span>
+                  </div>
+                  <span class="review-rating">5 / 5</span>
+                </div>
+                <p class="review-text">Top service</p>
+              </article>
+              <article class="review-card review-slide">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">Juan Estevez</span>
+                    <span class="review-date">14-06-2023</span>
+                  </div>
+                  <span class="review-rating">4 / 5</span>
+                </div>
+                <p class="review-text">Nobody is Perfect.<br />(Therefore 4****)</p>
+              </article>
+              <article class="review-card review-slide">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">Yasin Karacaoglu</span>
+                    <span class="review-date">19-02-2019</span>
+                  </div>
+                  <span class="review-rating">5 / 5</span>
+                </div>
+                <p class="review-text">Super service</p>
+              </article>
+              <article class="review-card review-slide">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">Brandon Verpoorte</span>
+                    <span class="review-date">09-10-2019</span>
+                  </div>
+                  <span class="review-rating">5 / 5</span>
+                </div>
+                <p class="review-text">Top service</p>
+              </article>
+              <article class="review-card review-slide">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">Unlimited Occasions</span>
+                    <span class="review-date">11-10-2024</span>
+                  </div>
+                  <span class="review-rating">5 / 5</span>
+                </div>
+                <p class="review-text">
+                  Wij als autobedrijf doen al jaren zaken met reparatiebedrijf Akkol. De reden waarom wij voor
+                  Akkol reparatie bedrijf hebben gekozen is omdat ze veelzijdig zijn: Apk, Reparatie, onderhoud.
+                  Denk aan distributieriem vervangen tot aan complete motor vervanging. Ze denken graag met je
+                  mee. Ze hebben zeer schappelijke prijzen. Voor ons is Akkol de betere reparatie bedrijf in
+                  Enschede
+                </p>
+              </article>
+              <article class="review-card review-slide">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">Alex E</span>
+                    <span class="review-date">06-10-2023</span>
+                  </div>
+                  <span class="review-rating">5 / 5</span>
+                </div>
+                <p class="review-text">
+                  Vakmensen!<br />
+                  Had mijn polo 1.2tsi kapot, ketting moest vervangen worden en olie/oliefilter etc..<br />
+                  Ik kon er binnen 4 dagen terecht en 24 uur later auto ophalen tiptop.<br />
+                  En dat vergeleken met de dealer voor een zeer schappelijk prijs! Aanrader!
+                </p>
+              </article>
+              <article class="review-card review-slide">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">A Google User</span>
+                    <span class="review-date">20-02-2021</span>
+                  </div>
+                  <span class="review-rating">1 / 5</span>
+                </div>
+                <p class="review-text">
+                  Gewoon een oplichter! Je gaat erheen met 1 onderdeel te vervangen en zodra je weer weg bent gaan
+                  er 5 onderdelen kapot. Ze slopen gewoon je auto zodat je weer terug gaat om weer geld neer te
+                  leggen. Deze garage bestaat door mensen op te lichten. Ik zou hier ver vandaan blijven. Ook geen
+                  auto hier inruilen want de kilometerstanden worden hier gewoon terug gedraaid!! Waardeloze
+                  garage!! De positieve reacties hier zijn van mensen die nog slapen of bekenden en familie leden
+                </p>
+              </article>
+              <article class="review-card review-slide">
+                <div class="review-top">
+                  <div>
+                    <span class="review-name">emre Unal</span>
+                    <span class="review-date">01-11-2024</span>
+                  </div>
+                  <span class="review-rating">5 / 5</span>
+                </div>
+                <p class="review-text">Ik kon zonder afspraak langs komen werd snel geholpen was binnen uurtje klaar.</p>
+              </article>
+            </div>
+            <div class="review-controls">
+              <button class="slider-btn" id="reviewPrev" aria-label="Vorige review">&#x2190;</button>
+              <div class="slider-meta">
+                <span class="slider-count" id="reviewCount">01 / 08</span>
+              </div>
+              <button class="slider-btn" id="reviewNext" aria-label="Volgende review">&#x2192;</button>
+            </div>
+          </div>
+          <p class="review-note">Bron: Google Reviews.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand">
+            <span class="brand-mark">
+              <img class="brand-logo" src="logo.jpg" alt="Autohandel Akkol logo" />
+            </span>
+            <div class="brand-text">
+              <span class="brand-name">Autohandel Akkol</span>
+              <span class="brand-tag">Universeel Garagebedrijf</span>
+            </div>
+          </div>
+          <p class="footer-note">
+            Moderne werkplaats voor onderhoud, modificatie en detailing. Gevestigd in Enschede.
+          </p>
+        </div>
+        <div>
+          <h4>Bezoek</h4>
+          <p>Ma - Za: 9:00 - 19:00</p>
+          <p>Op afspraak mogelijk</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Kalimantanstraat 1, 7512HL Enschede</p>
+          <p>Tel. 053-4311721</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
